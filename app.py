@@ -36,8 +36,9 @@ def home():
     conn.close()
 
     return render_template("index.html", reviews=reviews)
-
-
-if __name__ == '__main__':
+    
+    if __name__ == '__main__':
     init_db()
-    app.run(host-'0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True)
+
+
